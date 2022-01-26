@@ -48,3 +48,20 @@ elif user_input == 4:
 
 else:
     print("Invalid entry")
+
+# try:
+#     user_input = input()
+#     user_input = int(user_input)
+#     num1 / num2
+
+# except ZeroDivisionError as e:
+#     print("Can't divide by zero!")
+#     print(e)
+# except TypeError as e:
+#     print("Can't figure out how to divide those!")
+#     print(e)
+# except ValueError as e:
+#     print("You must enter an actual number!")
+#     print(e)
+# except:
+#     print("Sorry, something went wrong!")
