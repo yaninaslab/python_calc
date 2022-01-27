@@ -10,58 +10,35 @@ print("2. Subtract two numbers")
 print("3. Multiply two numbers")
 print("4. Divide two numbers")
 
-user_input = input()
-user_input = int(user_input)
-
-
-if user_input == 1:
+try:
+    user_input = input()
+    user_input = int(user_input)
     num1 = input("Enter first number:")
     num1 = float(num1)
     num2 = input("Enter second number:")
     num2 = float(num2)
+except ValueError as e:
+    print("You must enter an actual number!")
+    exit()
+except:
+    print("Sorry, something went wrong!")
+    exit()
+
+if user_input == 1:
     result = a.add_two_numbers(num1, num2)
     print(result)
 
 elif user_input == 2:
-    num1 = input("Enter first number:")
-    num1 = float(num1)
-    num2 = input("Enter second number:")
-    num2 = float(num2)
     result = s.subract_two_numbers(num1, num2)
     print(result)
 
 elif user_input == 3:
-    num1 = input("Enter first number:")
-    num1 = float(num1)
-    num2 = input("Enter second number:")
-    num2 = float(num2)
     result = m.multiply_two_numbers(num1, num2)
     print(result)
 
 elif user_input == 4:
-    num1 = input("Enter first number:")
-    num1 = float(num1)
-    num2 = input("Enter second number:")
-    num2 = float(num2)
     result = d.divide_two_numbers(num1, num2)
     print(result)
 
 else:
     print("Invalid entry")
-
-# try:
-#     user_input = input()
-#     user_input = int(user_input)
-#     num1 / num2
-
-# except ZeroDivisionError as e:
-#     print("Can't divide by zero!")
-#     print(e)
-# except TypeError as e:
-#     print("Can't figure out how to divide those!")
-#     print(e)
-# except ValueError as e:
-#     print("You must enter an actual number!")
-#     print(e)
-# except:
-#     print("Sorry, something went wrong!")
